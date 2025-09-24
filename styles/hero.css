@@ -1,0 +1,206 @@
+.hero {
+  max-width: 480px;
+  width: 100%;
+  padding: 1rem 1.5rem 3rem;
+  margin-inline: auto;
+
+  & h1 {
+    max-width: 19.5rem;
+  }
+
+  & h1 div {
+    display: inline-block;
+    height: 2.5rem;
+    overflow: hidden;
+    width: min-content;
+    vertical-align: bottom;
+  }
+
+  & h1 span:nth-child(1),
+  & h1 span:nth-child(4) {
+    color: var(--snitap-sky-mid);
+  }
+
+  & h1 span:nth-child(2) {
+    color: var(--snitap-joy-mid);
+  }
+
+  & h1 span:nth-child(3) {
+    color: var(--snitap-leaf-mid);
+  }
+
+  & h1 span {
+    display: block;
+    animation: slideUp 6s infinite ease;
+  }
+}
+
+@keyframes slideUp {
+  /* radical static */
+  0%, 22% {
+    transform: translateY(0);
+  }
+
+  /* divertida in */
+
+  23% {
+    transform: translateY(calc(-2.5rem - 7.5px));
+  }
+
+  25% {
+    transform: translateY(calc(-2.5rem + 5px));
+  }
+
+  27% {
+    transform: translateY(calc(-2.5rem - 2.5px));
+  }
+
+  29% {
+    transform: translateY(calc(-2.5rem + 2.5px));
+  }
+
+  /* divertida static */
+
+  33%, 55% {
+    transform: translateY(-2.5rem);
+  }
+
+  /* saudável in */
+
+  56% {
+    transform: translateY(calc(-5rem - 7.5px));
+  }
+
+  58% {
+    transform: translateY(calc(-5rem + 5px));
+  }
+
+  60% {
+    transform: translateY(calc(-5rem - 2.5px));
+  }
+
+  62% {
+    transform: translateY(calc(-5rem + 2.5px));
+  }
+
+  /* saudável static */
+
+  66%, 88% {
+    transform: translateY(-5rem);
+  }
+
+  /* radical in */
+
+  90% {
+    transform: translateY(calc(-7.5rem - 7.5px));
+  }
+
+  92% {
+    transform: translateY(calc(-7.5rem + 5px));
+  }
+
+  94% {
+    transform: translateY(calc(-7.5rem - 2.5px));
+  }
+
+  96% {
+    transform: translateY(calc(-7.5rem + 2.5px));
+  }
+
+  100% {
+    transform: translateY(-7.5rem);
+  }
+}
+
+@media (width >= 80em) {
+  .hero {
+    max-width: 80rem;
+
+    padding: 2.5rem 2rem;
+
+    & h1 {
+      max-width: 40rem;
+    }
+
+    & h1 div {
+      height: 5rem;
+    }
+  }
+
+  @keyframes slideUp {
+    /* radical static */
+    0%, 22% {
+      transform: translateY(0);
+    }
+  
+    /* divertida in */
+  
+    23% {
+      transform: translateY(calc(-5rem - 15px));
+    }
+  
+    25% {
+      transform: translateY(calc(-5rem + 10px));
+    }
+  
+    27% {
+      transform: translateY(calc(-5rem - 5px));
+    }
+  
+    29% {
+      transform: translateY(calc(-5rem + 5px));
+    }
+  
+    /* divertida static */
+  
+    33%, 55% {
+      transform: translateY(-5rem);
+    }
+  
+    /* saudável in */
+  
+    56% {
+      transform: translateY(calc(-10rem - 15px));
+    }
+  
+    58% {
+      transform: translateY(calc(-10rem + 10px));
+    }
+  
+    60% {
+      transform: translateY(calc(-10rem - 5px));
+    }
+  
+    62% {
+      transform: translateY(calc(-10rem + 5px));
+    }
+  
+    /* saudável static */
+  
+    66%, 88% {
+      transform: translateY(-10rem);
+    }
+  
+    /* radical in */
+  
+    90% {
+      transform: translateY(calc(-15rem - 15px));
+    }
+  
+    92% {
+      transform: translateY(calc(-15rem + 10px));
+    }
+  
+    94% {
+      transform: translateY(calc(-15rem - 5px));
+    }
+  
+    96% {
+      transform: translateY(calc(-15rem + 5px));
+    }
+  
+    100% {
+      transform: translateY(-15rem);
+    }
+  }
+}
