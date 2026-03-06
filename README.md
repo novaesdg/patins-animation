@@ -25,7 +25,9 @@ Landing Page animada de patins — site responsivo com galeria de fotos, efeitos
 </p>
 
 <p align="center">
+  
   👉 <a href="https://novaesdg.github.io/patins-animation/"><strong>Clique aqui para acessar o site</strong></a>
+  
 </p>
 
 ## 🚀 Tecnologias
